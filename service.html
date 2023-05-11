@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+
+                    <!-- Bootstrap CSS -->
+    <link href="fichier.bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+                      <!------- Font Awesome ------->
+    <script src="https://kit.fontawesome.com/4b4b25ce3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+                      
+                            <!-- link css -->
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white bg-opacity-75 px-4">
+          <div class="nav-res container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="w-100" src="service-img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler rounded-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu fs-6 fw-bold">MENU</span><i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item text-center me-3">
+                  <a class="nav-link fw-semibold text-black text" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item text-center mx-3">
+                  <a class="nav-link fw-semibold text-black text" href="service.html">SERVICES</a>
+                </li>
+                <li class="nav-item text-center mx-3">
+                  <a class="nav-link fw-semibold text-black text" href="blog.html">BLOG</a>
+                </li>
+                <li class="nav-item text-center mx-3">
+                  <a class="nav-link fw-semibold text-black text" href="portfolio.html">PORTFOLIO</a>
+                </li>
+                <li class="nav-item text-center mx-3">
+                    <a class="nav-link fw-semibold text-black text" href="shop.html">SHOP</a>
+                </li>
+                <li class="nav-item text-center mx-3">
+                    <a class="nav-link fw-semibold text-black text" href="about.html">ABOUT</a>
+                  </li>
+                <li class="nav-item text-center ms-3">
+                    <a class="nav-link fw-semibold text-black text" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Code CSS -->
+<style>
+    .nav-item{
+      font-size: 14px;
+   
+  }
+  .text{
+      position: relative;
+      text-decoration: none;    
+      cursor: context-menu;
+  }
+  .text::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      transition: all 0.6s ease;
+      transform: translate(-50% -50%);
+      width: 0%;
+      height: 100%;
+      z-index: 1;
+  }
+  .text:hover::before{
+      width: 100%;
+  }
+  @media screen and (max-width:782px) {
+      .nav-res{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+      nav .navbar-brand{
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .navbar-toggler{
+        width: 80%;
+        background: black;
+        display: flex;
+        justify-content: space-between;
+      }
+      .fa-bars{
+        color: #fff;
+      }
+      .menu{
+        color: #fff;
+      }
+    } 
+  </style>
+  
+    <header class="header pt-5">
+        <h1 class="text-center fw-bold">SERVICES</h1>
+        <div class="text-center">
+            <span class="fs-5">Home 
+                <span class="chevron mx-3" ><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></span>
+                 Services</span> 
+        </div>
+    </header>
+
+        <!-- ---------------------------------------------------------------------------- -->
+    <section class="mt-5 pt-5">
+        <div class="container service1">
+            <div class="row">
+                <div class="col-10 offset-1 offset-md-0 col-md-5 text-center text-md-start">
+                    <h2>PROVIDING THE BEST SERVICE SINCE 1972</h2>
+                    <p>Occaecati cupiditate non provident, similique sunt in culpa qui 
+                        officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+
+                <div class="col-9 offset-3 col-md-2 offset-md-0">
+                    <img src="service-img/services-logo-150x150.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-10 offset-1 offset-md-0 col-md-5 text-center text-md-start">
+                    <p style="font-size: 14px; line-height: 31px;">Occaecati cupiditate non provident, similique sunt in culpa qui officia 
+                        deserunt mollitia animi, id est laborum et dolorum fuga. Lorem ipsum dolor 
+                        sit amet, consectetur adipiscing elit. Et harum quidem rerum facilis est 
+                        et expedita distinctio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Maecenas id est sed lacus volutpat lobortis.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+                <!-- ---------------------------------------------------------------- -->
+        <div class="pt-5 mt-5 service2">
+            <div class="container">
+                <div class="row mt-5 pt-5">
+                    <div class="col-7 col-md-6 offset-2 offset-md-0 text-white">
+                        <h2 class="mb-3">STYLE THAT DRIVE US GOING</h2>
+                        <p style="font-size: 13px; line-height: 25px;">Occaecati cupiditate non provident, similique sunt in culpa qui officia 
+                            deserunt mollitia animi, id est laborum et dolorum fuga. Lorem ipsum dolor 
+                            sit amet, consectetur adipiscing elit. Et harum quidem rerum facilis est 
+                            et expedita distinctio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Maecenas id est sed lacus volutpat lobortis.</p>
+                             <div class="row pt-5 flex-column flex-md-row">
+                                <div class="content col-12 col-md-4">
+                                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                                    <span class="mx-2"style="font-size: 17px;
+                                    font-weight: 500;">Retina Ready</span>
+                                </div>
+                                <div class="content col-12 col-md-4">
+                                    <i class="fa-solid fa-music fa-2x"></i>
+                                    <span class="mx-2"style="font-size: 17px;
+                                    font-weight: 500;">Media Sport</span>
+                                </div>
+                                <div class="content col-12 col-md-4">
+                                    <i class="fa-solid fa-lightbulb fa-2x"></i>
+                                    <span class="mx-2" style="font-size: 17px;
+                                    font-weight: 500;">Unique Design</span>
+                                </div>
+                            </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <setion>
+        <div class="container-fluid animation">
+            <div class="row mx-5">
+                <div class="card p-3 rounded-0">
+                                                               
+                    <i class="text-center rotation fa-solid fa-trophy fa-2x"></i>
+                    <div class="card-body">
+                      <h5 class="num card-title text-center py-3 fw-bold fs-1" data-val="125">000</h5>
+                      <div class="my-txt text-center">
+                        <a class="effet fw-bold text-white">AWARDS</a>
+                    </div>
+                    </div>                    
+                  
+                </div>
+
+                  <div class="card p-3 rounded-0">
+                    
+                    <i class="fa-solid fa-droplet text-center rotation fa-2x"></i>
+                    <div class="card-body">
+                      <h5 class="num card-title text-center py-3 fw-bold fs-1" data-val="1000">000</h5>
+                      <div class="my-txt text-center">
+                        <a class="effet fw-bold text-white">PROJECTS</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                  <div class="card p-3 rounded-0">
+                    
+                    <i class="fa-solid fa-computer-mouse text-center rotation fa-2x"></i>
+                    <div class="card-body">
+                      <h5 class="num card-title text-center py-3 fw-bold fs-1" data-val="35">000</h5>
+                      <div class="my-txt text-center">
+                        <a class="effet fw-bold text-white">CREATIVITY</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                  <div class="card p-3 rounded-0">
+                    
+                    <i class="fa-solid fa-thumbs-up text-center rotation fa-2x"></i>
+                    <div class="card-body">
+                      <h5 class="num card-title text-center py-3 fw-bold fs-1" data-val="252">000</h5>
+                      <div class="my-txt text-center">
+                        <a class="effet fw-bold text-white">CLIENTS</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+            </div>
+        </div>
+    </setion>
+
+
+
+                <!-- ---------------------------------------------------------------- -->
+    <section class="features my-5 py-5">
+        <div class="container">
+            <h1 class="py-5 fw-bold text-center text-md-start">OUR FEATURES</h1>
+            <div class="row">
+                <div class="col-8 offset-2 offset-md-0 col-md-6 text-center text-md-start">
+                    <p>Occaecati cupiditate non provident, similique sunt in culpa qui
+                        officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-8 offset-2 offset-md-0 col-md-6 text-center text-md-start">
+                    <p style="font-size: 13px; line-height: 33px;">Qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+                        Harum quidem rerum facilis est et expedita distinctio. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+                <!-- --------------------- first row timeline ---------------------------- -->
+                <div class="row mt-5 pt-3">
+                    <div class="col-10 offset-1 col-md-4 offset-md-0 col-lg-4">
+                        <div class="timeline">
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot fa-2x"></i>
+                                </div>
+                                <div class="txt offset-1">                                    
+                                  <h4>Responsive Google Map</h4>
+                                  <p style="font-size: 13px;">Occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
+                                    mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-9 offset-1 col-md-4 offset-md-0 col-lg-4">
+                        <div class="timeline">
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-solid fa-wrench fa-2x"></i>
+                                </div>
+                                <div class="txt offset-1">                                    
+                                  <h4>Lots of Customization</h4>
+                                  <p style="font-size: 13px;">Occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
+                                    mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-9 offset-1 col-md-4 offset-md-0 col-lg-4">
+                        <div class="timeline">
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-regular fa-file-code fa-2x"></i>
+                                </div>
+                                <div class="txt offset-1">                                    
+                                  <h4>HTML5 Css3</h4>
+                                  <p style="font-size: 13px;">Occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
+                                    mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --------------------- second row timeline ---------------------------- -->
+                <div class="row mt-4">
+                    <div class="col-9 offset-1 col-md-4 offset-md-0 col-lg-4">
+                        <div class="timeline">
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-solid fa-lightbulb fa-2x"></i>
+                                </div>
+                                <div class="txt offset-1">                                    
+                                  <h4>Innovatove Ideas</h4>
+                                  <p style="font-size: 13px;">Occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
+                                    mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-9 offset-1 col-md-4 offset-md-0 col-lg-4">
+                        <div class="timeline">
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-solid fa-rocket fa-2x"></i>
+                                </div>
+                                <div class="txt offset-1">                                    
+                                  <h4>Efficient Coding</h4>
+                                  <p style="font-size: 13px;">Occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
+                                    mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+        <div class="col-9 offset-1 col-md-4 offset-md-0 col-lg-4">
+            <div class="timeline">
+                <div class="d-flex">
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+                    </div>
+                    <div class="txt offset-1">                                    
+                        <h4>100% Responsive</h4>
+                        <p style="font-size: 13px;">Occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
+                        mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.</p>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+
+
+    <section class="team py-5">
+        <div class="container">
+            <h2 class="text-center py-5 text-white" style="position: relative; z-index: 3;">WE ARE A TEAM WITH CREATIVE PEOPLE</h2>
+        <p class="text-center pb-4 text-white mx-5" style="font-size: 14px; line-height: 33px;
+        position: relative; z-index: 3;">Occaecati cupiditate non provident, similique sunt in culpa
+             qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+              Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio.
+             Maecenas id est sed lacus volutpat lobortis.</p>
+             <div class="text-center" style="position: relative; z-index: 3;">
+                <a href="" class="btn bg bg-dark text-white mb-5 py-2 px-3 rounded-0">View All Demos</a>
+             </div>             
+            
+
+            <div class="block mt-5">
+                <div class="row">
+                    <div class="card p-3 rounded-0">
+                        <i class="text-center pt-5 fa-solid fa-droplet fa-3x"></i>
+                        <div class="card-body">
+                          <h5 class="card-title text-center py-3">BUSINESS STRATEGY</h5>
+                          <p class="card-text text-center pt-4 pb-2">Lipsum via Phasellus enim libero, blandit vel sapien vitae, 
+                            condimentum ultricies.</p>
+                        </div>
+                      </div>
+                      <div class="card p-3 rounded-0">
+                        <i class="text-center pt-5 fa-solid fa-rocket fa-3x"></i>
+                        <div class="card-body">
+                          <h5 class="card-title text-center py-3">COMPLETE ANALYTIC</h5>
+                          <p class="card-text text-center pt-4 pb-2">Lipsum via Phasellus enim libero, blandit vel sapien vitae, 
+                            condimentum ultricies.</p>
+                        </div>
+                      </div>
+                      <div class="card p-3 rounded-0">
+                        <i class="text-center pt-5 fa-solid fa-share-nodes fa-3x"></i>
+                        <div class="card-body">
+                          <h5 class="card-title text-center py-3">MAGICAL FORMULA</h5>
+                          <p class="card-text text-center pt-4 pb-2">Lipsum via Phasellus enim libero, blandit vel sapien vitae, 
+                            condimentum ultricies.</p>
+                        </div>
+                      </div>
+                      <div class="card p-3 rounded-0">
+                        <i class="text-center pt-5 fa-solid fa-book-open fa-3x"></i>
+                        <div class="card-body">
+                          <h5 class="card-title text-center py-3">QUALITY VERIFIED</h5>
+                          <p class="card-text text-center pt-4 pb-2">Lipsum via Phasellus enim libero, blandit vel sapien vitae, 
+                            condimentum ultricies.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>  
+            
+            <p class="text-center py-5" style="font-size: 13px;">Occaecati cupiditate non provident, similique sunt in culpa qui officia 
+                deserunt mollitia animi, id est laborum et dolorum fuga. Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Et harum quidem rerum facilis est et.</p>
+
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-4 offset-md-4">
+                        <div class="input-group mb-3">                  
+                            <input type="email" class="form-control p-3 rounded-0" placeholder="votre email"
+                            style="border: 1px solid black;">
+                            <span class="input-group-text rounded-0" id="basic-addon1" style="background: none; border: 1px solid black;">
+                                <i class="fa-regular fa-circle-right fa-2x"></i></span>
+                          </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+            <!------------------------------------ footer ---------------------------------->
+
+<footer class="">
+<section class="">
+<div class="white"></div>
+<div class="boder"></div>
+        
+</section>
+<section class="py-5 s2">
+                <div class="container-fluid text-white">
+    <div class="row py-5 gy-5">
+        <div class="col-12 col-md text-md-end text-center">
+            <p>
+              64C East Crest,Melane Plaza,DanyBoyle,┬┬ 335546
+            </p>
+            <p>
+               (973)486-4862
+            </p>
+            <p>
+              contact@foreal.com
+            </p>
+        
+        </div>
+        <div class="col-12 col-md text-center">
+            <img src="service-img/footer-icon.png" alt="">
+        </div>
+        <div
+            class="col-12 col-md d-flex flex-wrap flex-md-nowrap justify-content-center align-items-center">
+            <i class="fa-brands fa-facebook py-2 px-3"></i>
+            <i class="fa-brands fa-twitter py-2 px-3"></i>
+            <i class="fa-brands fa-pinterest py-2 px-3"></i>
+            <i class="fa-brands fa-linkedin py-2 px-3"></i>
+            <i class="fa-brands fa-youtube py-2 px-3"></i>
+        </div>
+    </div>
+    <div class="border-0 border-top border-light py-4 text-center">
+    <p>Copyright © 2020 Foreal Theme All Rights Reserved. Buddha Themes</p>
+    </div>
+</div>
+</section>
+
+<!-- css footer -->
+<style>
+    footer {
+        background: url(service-img/footer-image-light.jpg);
+    }
+
+    .white {
+        background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
+        border-top: 25vh solid rgba(255, 255, 255, 0.7);
+        border-right: 48vw solid rgba(255, 255, 255, 0.7);
+        border-left: 49vw solid rgba(255, 255, 255, 0.7);
+        border-bottom: 0px solid;
+
+    }
+
+    .s2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+
+    }
+
+    .boder {
+        background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+        border-top: 5vh solid rgba(255, 255, 255, 0.7);
+        border-right: 48vw solid rgba(0, 0, 0, 0.7);
+        border-left: 49vw solid rgba(0, 0, 0, 0.7);
+        border-bottom: 0px solid;
+
+    }
+
+    i {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width:782px) {
+
+        .white,
+        .boder,
+        .wave {
+            border: none;
+
+        }
+
+        footer section:first-child {
+            padding: 50px;
+            background-color: white;
+        }
+
+    }
+</style>
+
+</footer>
+        
+
+                    <!--Link bootstrap js  -->
+  <script src="fichier.bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="service.js"></script>
+</body>
+</html>

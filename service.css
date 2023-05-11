@@ -1,0 +1,220 @@
+header{
+    background-image: url(./service-img/breadcrumb.jpg);
+    background-size: cover;
+    background-position:bottom;
+    background-attachment: fixed;
+    padding-bottom: 200px;
+}
+header h1{
+    font-size: 70px;
+    padding-top: 130px;
+}
+.fa-chevron-right{
+    font-size: 11px;
+}
+
+.service2{
+    background-image: url(./service-img/i-pad2.jpg);
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 200px;
+}
+
+.animation{
+    background-color: rgba(0, 0, 0, 0.737);
+    padding: 133px 0;
+    color: white;
+}
+.animation .card{
+    position: relative;
+    background: none;
+    border: none;
+    width: 25%;
+}
+.animation .card::before{
+    content: '';
+    position: absolute;
+    left: 3%;
+    top: 0;
+    width: 60px;
+    height: 60px;    
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+.animation .card::after{
+    content: '';
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    width: 60px;
+    height: 60px;    
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+.animation .card:hover::before,
+.animation .card:hover::after{
+    border-width: 7px;
+    transition: all 0.70s;
+}
+.rotation{
+    transition: 0.7s transform;
+}
+.rotation:hover{
+    transform: rotateY(200deg);
+}
+
+
+.effet{
+    position: relative;
+    text-decoration: none;    
+    cursor: context-menu;
+}
+.effet::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    display: block;
+    border-bottom: 1px solid white;
+    transition: all 0.6s ease;
+    transform: translate(-50% -50%);
+    width: 0%;
+    height: 100%;
+    z-index: 1;
+}
+.effet:hover::before{
+    width: 100%;
+}
+
+
+.timeline{
+    position: relative;
+}
+.timeline::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    background-color: rgba(128, 128, 128, 0.314);
+    top: 50px;
+    bottom: 0;
+    left: 5%;
+    margin-left: -7px;
+}
+
+.team{
+    position: relative;
+    background-image: url(./service-img/services-bg1.jpg);
+    background-position: top;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+}
+.team::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+    width: 100%;
+    height: 60%;
+}
+
+
+
+.team .block .card{
+    border: 2px solid black;
+    z-index: 1;
+    width: 25%;
+}
+.team .card p{
+    font-size: 13px;
+}
+.team .card-title{
+    position: relative;
+
+}
+.team .card-title::after{
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: 45%;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    .service1 h2{
+        font-size: 33px;
+    }
+    .service1 p{
+      margin: 33px 0;  
+    }
+    .service2 .content{
+        margin-top: 33px;
+    }
+
+
+    .animation .card{
+        width: 100%;        
+    }
+    .animation .card::before{
+        position: absolute;
+        left: 0;
+        top: 0;        
+    }
+    .animation .card::after{
+        position: absolute;
+        right: 0;
+        bottom: 0;        
+    }
+
+    .timeline::before{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 90px;
+        background-color: rgba(128, 128, 128, 0.314);
+        top: 50px;
+        bottom: 0;
+        left: 7%;
+        margin-left: -7px;
+    }
+
+
+    .team{
+        position: relative;
+        background-image: url(./service-img/services-bg1.jpg);
+        background-position: top;
+        background-size: 100% 37%;
+        background-repeat: no-repeat;
+    }
+    .team::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.47);
+        height: 37%;
+    }
+    .team h2{
+        font-size: 37px;
+    }
+    .team .block .card{
+        border: 1px dashed rgba(0, 0, 0, 0.59);       
+        width: 80%;
+        margin: 0 auto;
+    }
+}

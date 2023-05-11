@@ -1,0 +1,454 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Satisfy&display=swap');
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+.satisfy{
+    font-family: 'Satisfy', cursive;
+    font-size: 18px;
+}
+.num{
+    font-family: 'Raleway', sans-serif;
+}
+/* Header */
+
+/* test */
+
+.card-text{
+    position: relative;
+    text-decoration: none;    
+    }
+.card-text::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    padding-bottom: 2em;
+    border-bottom: 1px solid black;
+    transition: all 1s ease;
+    transform: translate(-50% -50%);
+    width: 0%;
+    height: 100%;
+    z-index: 1;
+}
+    .card-text:hover::before{
+    width: 100%;
+}
+/* testFin */
+.nav-item{
+    font-size: 14px;
+    
+    }
+    .textNav{
+    position: relative;
+    text-decoration: none;    
+    cursor: pointer;
+    }
+    .textNav::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: all 1s ease;
+    transform: translate(-50% -50%);
+    width: 0%;
+    height: 100%;
+    z-index: 1;
+    }
+    .textNav:hover::before{
+    width: 100%;
+    }
+/* Header Fin */
+.principal{
+    background-image: url('https://foreal.vedicthemes.com/wp-content/uploads/2016/03/slider.jpg');
+    height: 600px;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+svg{
+    margin-top: -170px;
+}
+.ordi{
+    background-image: url('https://foreal.vedicthemes.com/wp-content/uploads/2016/03/feature-img.png');
+    height: 550px;
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.bout{
+    background-color: black;
+    color: white;
+    transition: all 1s;
+}
+.bout:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+}
+/* OUR Services */
+
+.animation .card{
+    position: relative;
+    background: none;
+    border: none;
+}
+.backg{
+    background: url('imagesH/home/pattes.png') no-repeat ;  
+}
+.backg2{
+    background: url('imagesH/home/idee.png') no-repeat ;  
+}
+.backg3{
+    background: url('imagesH/home/flacon-a-moitie-plein.png') no-repeat ; 
+}
+.backg4{
+    background: url('imagesH/home/portable.png') no-repeat ; 
+}
+.backg5{
+    background: url('imagesH/home/icone-plus.png') no-repeat ; 
+}
+.backg6{
+    background: url('imagesH/home/baguette-magique.png') no-repeat ; 
+}
+.backg, .backg2, .backg3, .backg4, .backg5, .backg6{
+    opacity: 0.05;
+    background-size: 100px;
+    background-position: right bottom;
+    height: 150px;
+    margin-bottom: -150px;
+    transition: opacity ease 1s;
+}
+.backg:hover, .backg2:hover, .backg3:hover, .backg4:hover, .backg5:hover, .backg6:hover{
+    opacity: 0.3;
+}
+/* __ */
+.rowSer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    margin: auto;
+}
+.rowSer .cardSer{
+    width: 320px;
+    position: relative;
+    cursor: pointer;
+}
+.rowSer .cardSer .imgbox{
+    width: 100%;
+    overflow: hidden;
+}
+.rowSer .cardSer .imgbox img{
+    width: 15%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+.rowSer .cardSer::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: none;
+    top: 0;
+    left: 0;
+    transform: translate(-15px, -15px);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+.rowSer .cardSer::after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: none;
+    bottom: 0;
+    right: 0;
+    transform: translate(15px, 15px);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+.rowSer .cardSer:hover:before, .rowSer .cardSer:hover:after{
+    border-width: 5px;
+    transition: all 0.7s;
+}
+.rowSer .cardSer:hover .imgbox img{
+    transform: scale(1.1);
+    transform: rotateY(360deg);
+}
+/* _____ */
+
+
+
+/* New Work */
+.work:hover{
+    border: 1px double #fff;
+}
+
+/* _______________________ */
+/* Carousel */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(8, 37vw);
+	grid-template-rows: 1fr;
+	overflow: scroll;
+	scroll-snap-type: both mandatory;
+}
+
+.active {
+	scroll-snap-type: unset;
+}
+
+li {
+	scroll-snap-align: center;
+	display: inline-block;
+	font-size: 0;
+}
+.box{
+    position: relative;
+    box-shadow: 0 0 5px;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.box:hover img{
+    transform: scale(1.05);
+}
+.box .text{
+    position: absolute;
+    width: 50%;
+    bottom: 25%;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    color: #fff;
+    display: flex;
+    font-weight: bold;
+}
+.box .name, .box .works{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: auto;
+    font-size: 20px;
+    opacity: 1;
+   
+}
+.box .works .imHover{
+    background-color: black;
+    margin: auto;
+    display: flex;
+    border-radius: 100%;
+    z-index: 100;
+    cursor: pointer;
+    transition: all 1s;
+}
+.box .works .imHover:hover{
+    background-color: #fff;
+    
+}
+.im{
+    z-index: 1000;
+}
+.box .works .imHover i{
+    margin: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+.box .works .imHover i:hover{
+    color: black;
+}
+.box:hover .name, .box .works{
+    opacity: 0;
+}
+.box:hover .works{
+    opacity: 1;
+}
+.box::after,
+.box::before{
+    content: "";
+    width: 0;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.box::after{
+    border-top: 2px white solid;
+    border-right: 2px white solid;
+    top: 5%;
+    right: 5%;
+}
+.box::before{
+    border-left: 2px white solid;
+    border-bottom: 2px white solid;
+    bottom: 4.5%;
+    left: 4.5%;
+}
+.box:hover::after,
+.box:hover::before{
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+}
+/* Master Pieces */
+.fa-quote-left{
+    font-size: 90px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.row .card{
+    position: relative;
+    margin: 30px;
+    cursor: pointer;
+}
+.row .card .imgbox{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.row .card .imgbox i{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+.row .card::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: none;
+    top: 0;
+    left: 0;
+    transform: translate(-15px, -15px);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+.row .card::after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: none;
+    bottom: 0;
+    right: 0;
+    transform: translate(15px, 15px);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+.row .card:hover:before, .row .card:hover:after{
+    border-width: 5px;
+    transition: all 0.7s;
+}
+.row .card:hover .imgbox i{
+    transform: scale(1.1);
+    transform: rotateY(360deg);
+}
+
+
+/* FOOTER */
+footer{
+    background:url(imagesH/footer/footer-image-light.jpg);
+
+}
+
+.white{
+background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
+border-top: 25vh solid rgba(255, 255, 255, 0.7);
+border-right: 48vw solid rgba(255, 255, 255, 0.7);
+border-left: 49vw solid rgba(255, 255, 255, 0.7);
+border-bottom: 0px solid ;
+}
+.s2{
+background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+}
+.boder{
+background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+border-top: 5vh solid rgba(255, 255, 255, 0.7);
+border-right: 48vw solid rgba(0, 0, 0, 0.7);
+border-left: 49vw solid rgba(0, 0, 0, 0.7);
+border-bottom: 0px solid ;
+}
+i{
+font-size: 22px;
+}
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width:782px) {
+    .white,.boder,.wave{
+        border: none;
+    
+    }
+    footer section:first-child{
+        padding: 50px;
+        background-color: white;
+    }
+    .principal{
+        height: 250px;
+    }
+    .nav-res{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+      nav .navbar-brand{
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .navbar-toggler{
+        width: 80%;
+        background: black;
+        display: flex;
+        justify-content: space-between;
+      }
+      .fa-bars{
+        color: #fff;
+      }
+      .menu{
+        color: #fff;
+      }
+    .ordi{
+
+        background-size: contain;
+        height: 230px;
+        background-repeat: no-repeat;
+    }
+    .box .text .works h5{
+        font-size: 15px;
+    }
+    .rowSer{
+        margin: 0;
+        justify-content: center;
+    }
+    
+  } 

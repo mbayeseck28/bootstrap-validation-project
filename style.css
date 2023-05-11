@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.nav-item {
+    font-size: 14px;
+
+}
+
+.text {
+    position: relative;
+    text-decoration: none;
+    cursor: context-menu;
+}
+
+.text::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: all 0.6s ease;
+    transform: translate(-50% -50%);
+    width: 0%;
+    height: 100%;
+    z-index: 1;
+}
+
+.text:hover::before {
+    width: 100%;
+}
+
+#top {
+    background: url(shop-images/shop/hero.jpg) no-repeat center/100%;
+
+}
+
+#top .text-center {
+    padding: 170px !important;
+}
+
+.wave {
+
+    border-top: 5vh solid transparent;
+    border-right: 48vw solid white;
+    border-left: 49vw solid white;
+    border-bottom: 0vh solid white;
+}
+
+.btn {
+    box-shadow: none !important;
+}
+
+.position-relative:hover .d-block {
+    display: none !important;
+
+
+}
+
+
+.page-link:hover,
+.pagination .active {
+    background-color: black !important;
+    color: white !important;
+}
+
+.fa-star {
+    font-size: 10px;
+}
+
+.rgba-red-strong:hover {
+    color: yellow !important;
+}
+
+.position-relative:hover .d-none {
+    display: flex !important;
+
+}
+
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.position-relative:hover #add {
+
+    margin-bottom: 16px;
+    display: flex !important;
+}
+
+.index {
+    z-index: 99 !important;
+    position: relative;
+}
+
+.position-relative #add {
+    z-index: 1 !important;
+    bottom: -15px;
+    margin-bottom: -50px;
+    transition: all ease-in-out 0.7s;
+
+}
+
+.position-relative #feature {
+    display: none;
+    animation: 390ms ease-in 0s display;
+
+}
+
+.position-relative:hover #feature {
+    display: inline !important;
+}
+
+#sale:after {
+    content: "";
+    border-top: 34px solid #212529;
+    border-left: 11px solid transparent;
+    position: absolute;
+    left: -11px;
+    top: 0;
+}
+
+#add span:first-child:hover {
+    background-color: #212529 !important;
+
+}
+
+#add span:last-child:hover {
+    background-color: #6c757d !important;
+
+}
+
+#features:after {
+    content: "";
+    border-top: 15px solid #212529;
+    border-bottom: 15px solid #212529;
+    border-right: 11px solid transparent;
+    border-left: 11px solid #212529;
+    position: absolute;
+    right: -21px;
+    top: 0;
+}
+
+
+#previous::before {
+    content: "";
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 25px solid black;
+    position: absolute;
+    left: -24px;
+    bottom: -2px;
+
+}
+
+#next::after {
+    content: "";
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 25px solid black;
+    position: absolute;
+    right: -24px;
+    bottom: -2px;
+
+}
+
+footer {
+    background: url(shop-images/footer/footer-image-light.jpg);
+}
+
+.white {
+    background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
+    border-top: 25vh solid rgba(255, 255, 255, 0.7);
+    border-right: 48vw solid rgba(255, 255, 255, 0.7);
+    border-left: 49vw solid rgba(255, 255, 255, 0.7);
+    border-bottom: 0px solid;
+
+}
+
+.s2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+
+}
+
+.boder {
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+    border-top: 5vh solid rgba(255, 255, 255, 0.7);
+    border-right: 48vw solid rgba(0, 0, 0, 0.7);
+    border-left: 49vw solid rgba(0, 0, 0, 0.7);
+    border-bottom: 0px solid;
+
+}
+
+i {
+    font-size: 22px;
+}
+
+@keyframes display {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes fade-down {
+    from {
+        margin-bottom: -30px;
+    }
+
+    to {
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (max-width:782px) {
+
+    .white,
+    .boder,
+    .wave {
+        border: none;
+
+    }
+
+    footer section:first-child {
+        padding: 50px;
+        background-color: white;
+    }
+
+}

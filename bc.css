@@ -1,0 +1,211 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.section-wave{
+    background-image:url(bc-images/slider-bottom.png) ;
+    height: 50px;
+    margin-top: -50px;
+    background-size: cover;
+}
+.section-bg{
+    background-image: url(bc-images/breadcrumb2.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-bg h1{
+    font-size: 70px;
+    position: relative;
+    z-index: 1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    font-family: 'Raleway';
+}
+.section-bg h5{
+    font-size: 20px;
+    z-index: 1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+}
+
+.section-bg h5 a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background:url(bc-images/footer-image-light.jpg); 
+}
+
+.white{
+background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
+border-top: 25vh solid rgba(255, 255, 255, 0.7);
+border-right: 48vw solid rgba(255, 255, 255, 0.7);
+border-left: 49vw solid rgba(255, 255, 255, 0.7);
+border-bottom: 0px solid ;
+
+}
+.s2{
+background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+
+}
+.boder{
+background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+border-top: 5vh solid rgba(255, 255, 255, 0.7);
+border-right: 48vw solid rgba(0, 0, 0, 0.7);
+border-left: 49vw solid rgba(0, 0, 0, 0.7);
+border-bottom: 0px solid ;
+
+}
+.nav-item{
+    font-size: 14px;
+ 
+}
+.text{
+    position: relative;
+    text-decoration: none;    
+    cursor: context-menu;
+}
+.text::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: all 0.6s ease;
+    transform: translate(-50% -50%);
+    width: 0%;
+    height: 100%;
+    z-index: 1;
+}
+.text:hover::before{
+    width: 100%;
+}
+i{
+    font-size: 22px;
+}
+.container .row .col-lg-3 h5 a{
+    font-size: 1em;
+}
+.container .row .col-lg-3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.container .row .col-lg-3 a:hover{
+    background-color: black;
+    color: #fff;
+    padding: 4px;
+    transition: 1s;
+}
+
+.mes-navs a{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 8px 10px;
+    position: relative;
+    text-transform: uppercase;
+    min-width: 10%;
+}
+.mes-navs a::before{
+    transform: translate3d(-50%, -50%, 0) rotate(45deg);
+}
+.mes-navs a::after{
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+}
+.mes-cont .les-i{
+    border: 5px solid rgb(254, 252, 252);
+    width: 60px;
+    background-color: black;
+    
+    border-radius: 50%;
+    height: 60px;
+}
+.mes-cont .fa{
+
+    font-size: 25px;
+    color: rgb(251, 248, 248);
+    border-radius: 50%;
+    padding: 5px;
+}
+.mes-cont .row{
+    width: 100%;
+}
+.mes-cont .text{
+    width: 100%;
+}
+.mes-cont .moi{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin-inline: 100px;
+    border-radius: 50%;
+}
+.col-group .fa{
+    font-size: 18px;
+    color: rgb(7, 7, 7);
+    padding: 5px;
+}
+.col-group:hover{
+    border: 1px solid black;
+}
+.col-group input, textarea{
+    outline: none;
+}
+button{
+   border: none;
+    color: #968989;
+    height: 50px;
+    width: 200px;
+}
+button:hover{
+    background-color: black;
+    color: #fff;
+    height: 50px;
+    width: 200px;
+}
+
+@media screen and (max-width:782px) {
+.white,.boder,.wave{
+    border: none;
+}
+footer section:first-child{
+    padding: 50px;
+    background-color: white;
+}
+.nav-res{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  nav .navbar-brand{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .navbar-toggler{
+    width: 80%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  .fa-bars{
+    color: #fff;
+  }
+  .menu{
+    color: #fff;
+  }
+}
