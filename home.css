@@ -37,6 +37,14 @@ h1{
     width: 100%;
 }
 /* testFin */
+header nav{
+    z-index: 1000;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    opacity: 90%;
+}
 .nav-item{
     font-size: 14px;
     
@@ -63,6 +71,10 @@ h1{
     .textNav:hover::before{
     width: 100%;
     }
+    .navActive{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
 /* Header Fin */
 .principal{
     background-image: url('https://foreal.vedicthemes.com/wp-content/uploads/2016/03/slider.jpg');
@@ -70,6 +82,9 @@ h1{
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+.tex{
+    margin: 0;
 }
 svg{
     margin-top: -170px;
@@ -149,7 +164,7 @@ svg{
 .rowSer .cardSer .imgbox img{
     width: 15%;
     object-fit: cover;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .rowSer .cardSer::before{
     content: '';
@@ -202,8 +217,7 @@ svg{
 	display: grid;
 	grid-template-columns: repeat(8, 37vw);
 	grid-template-rows: 1fr;
-	overflow: scroll;
-	scroll-snap-type: both mandatory;
+	overflow-x: scroll;
 }
 
 .active {
@@ -260,7 +274,7 @@ li {
     transition: all 1s;
 }
 .box .works .imHover:hover{
-    background-color: #fff;
+    background-color: #f1dede;
     
 }
 .im{
@@ -373,47 +387,65 @@ li {
 
 
 /* FOOTER */
-footer{
-    background:url(imagesH/footer/footer-image-light.jpg);
+footer {
+    background: url(shop-images/footer/footer-image-light.jpg);
+}
+
+.white {
+    background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
+    border-top: 25vh solid rgba(255, 255, 255, 0.7);
+    border-right: 48vw solid rgba(255, 255, 255, 0.7);
+    border-left: 49vw solid rgba(255, 255, 255, 0.7);
+    border-bottom: 0px solid;
 
 }
 
-.white{
-background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
-border-top: 25vh solid rgba(255, 255, 255, 0.7);
-border-right: 48vw solid rgba(255, 255, 255, 0.7);
-border-left: 49vw solid rgba(255, 255, 255, 0.7);
-border-bottom: 0px solid ;
+.s2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+
 }
-.s2{
-background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+
+.boder {
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+    border-top: 5vh solid rgba(255, 255, 255, 0.7);
+    border-right: 48vw solid rgba(0, 0, 0, 0.7);
+    border-left: 49vw solid rgba(0, 0, 0, 0.7);
+    border-bottom: 0px solid;
+
 }
-.boder{
-background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
-border-top: 5vh solid rgba(255, 255, 255, 0.7);
-border-right: 48vw solid rgba(0, 0, 0, 0.7);
-border-left: 49vw solid rgba(0, 0, 0, 0.7);
-border-bottom: 0px solid ;
+
+i {
+    font-size: 22px;
 }
-i{
-font-size: 22px;
-}
+
 
 
 
 
 /* RESPONSIVE */
 @media screen and (max-width:782px) {
-    .white,.boder,.wave{
+    .white,
+    .boder,
+    .wave {
         border: none;
-    
+
     }
-    footer section:first-child{
+
+    footer section:first-child {
         padding: 50px;
         background-color: white;
     }
+
     .principal{
-        height: 250px;
+        background-image: url(imagesH/home/slider.jpg);
+        height: 400px;
+    }
+    svg{
+        margin-top: -100px;
+    }
+    .navbar{
+        position: static;
+        opacity: 90%;
     }
     .nav-res{
         display: flex;
@@ -431,6 +463,14 @@ font-size: 22px;
         display: flex;
         justify-content: space-between;
       }
+      #navbarNav{
+        background-color: #fff;
+      }
+      .gallery {
+        grid-template-columns: repeat(8, 105%);
+        margin-right: 0;
+        margin-left: 1%;
+    }
       .fa-bars{
         color: #fff;
       }
@@ -446,7 +486,7 @@ font-size: 22px;
     .box .text .works h5{
         font-size: 15px;
     }
-    .rowSer{
+    .rowSer, .rowC{
         margin: 0;
         justify-content: center;
     }

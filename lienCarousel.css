@@ -197,42 +197,44 @@ border-color: #5cadff;
 
                 /*--------------footer--------------*/
 
-                footer{
-                    background:url(imagesH/footer/footer-image-light.jpg);
-                
-            }
-            
-            .white{
-                background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
-                border-top: 25vh solid rgba(255, 255, 255, 0.7);
-                border-right: 48vw solid rgba(255, 255, 255, 0.7);
-                border-left: 49vw solid rgba(255, 255, 255, 0.7);
-                border-bottom: 0px solid ;
-                
-                
-                
-            }
-            .s2{
-                background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
-               
-            }
-            .boder{
-                background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
-                border-top: 5vh solid rgba(255, 255, 255, 0.7);
-                border-right: 48vw solid rgba(0, 0, 0, 0.7);
-                border-left: 49vw solid rgba(0, 0, 0, 0.7);
-                border-bottom: 0px solid ;
-                
-            }
-            i{
-                font-size: 22px;
-            }
-            @media screen and (max-width:782px) {
-                .white,.boder,.wave{
-                    border: none;
-            
+                footer {
+                    background: url(shop-images/footer/footer-image-light.jpg);
                 }
-                footer section:first-child{
+                
+                .white {
+                    background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
+                    border-top: 25vh solid rgba(255, 255, 255, 0.7);
+                    border-right: 48vw solid rgba(255, 255, 255, 0.7);
+                    border-left: 49vw solid rgba(255, 255, 255, 0.7);
+                    border-bottom: 0px solid;
+                
+                }
+                
+                .s2 {
+                    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+                
+                }
+                
+                .boder {
+                    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%);
+                    border-top: 5vh solid rgba(255, 255, 255, 0.7);
+                    border-right: 48vw solid rgba(0, 0, 0, 0.7);
+                    border-left: 49vw solid rgba(0, 0, 0, 0.7);
+                    border-bottom: 0px solid;
+                
+                }
+                
+                i {
+                    font-size: 22px;
+                }
+            @media screen and (max-width:782px) {
+                .white,
+                .boder,
+                .wave {
+                    border: none;
+                }
+
+                footer section:first-child {
                     padding: 50px;
                     background-color: white;
                 }

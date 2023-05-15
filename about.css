@@ -7,17 +7,21 @@
 
 }
 /* navbar */
-.nav-item{
-    font-size: 14px;
- 
+.navbar{
+    position: fixed;
+    width: 100%;
+    opacity: 90%;
 }
-.text{
+    .nav-item{
+    font-size: 14px;
+    
+    }
+    .textNav{
     position: relative;
     text-decoration: none;    
-    cursor: context-menu;
-    color: black;
-}
-.text::before{
+    cursor: pointer;
+    }
+    .textNav::before{
     content: '';
     position: absolute;
     left: 0;
@@ -25,16 +29,20 @@
     display: block;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    transition: all 0.6s ease;
+    transition: all 1s ease;
     transform: translate(-50% -50%);
     width: 0%;
     height: 100%;
     z-index: 1;
-}
-.text:hover::before{
+    }
+    .textNav:hover::before{
     width: 100%;
-   
-}
+    }
+    .navActive{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
 
 
 .input-group .form-control:hover,
@@ -80,10 +88,6 @@
 
 /* ----------navigation-------- */
 
-.navbar {
-    background-color: #ffffff;
-    opacity: 0.9;
-}
 
 /* .nav-item {
     font-size: 14px;
@@ -193,12 +197,12 @@
     transition: all .9s ease-in;
 }
 
-.effec .effec-icon .nav-items {
+.effec .effec-icon {
     opacity: 0;
     width: 25%;
 }
 
-.effec:hover .effec-icon .nav-items {
+.effec:hover .effec-icon{
     opacity: 1;
     color: white;
 
@@ -287,21 +291,32 @@ i {
 /*--------------navigation--------------*/
 
 @media screen and (max-width:782px) {
+    .navbar{
+        position: static;
+        opacity: 90%;
+    }
     .nav-res{
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-    }
-    nav .navbar-brand{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+      nav .navbar-brand{
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .navbar-toggler{
         width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navbar-toggler{
-      width: 80%;
-      display: flex;
-      justify-content: space-between;
-    }
+        background: black;
+        display: flex;
+        justify-content: space-between;
+      }
+      #navbarNav{
+        background-color: #fff;
+      }
+      .menu, .fa-bars{
+        color: #fff;
+      }
    
   } 
 
@@ -362,6 +377,32 @@ i {
 
 
     /*--------------footer--------------*/
+    .navbar{
+        position: static;
+        opacity: 90%;
+    }
+    .nav-res{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+      nav .navbar-brand{
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .navbar-toggler{
+        width: 80%;
+        background: black;
+        display: flex;
+        justify-content: space-between;
+      }
+      #navbarNav{
+        background-color: #fff;
+      }
+      .menu, .fa-bars{
+        color: #fff;
+      }
     .white,
     .boder,
     .wave {
